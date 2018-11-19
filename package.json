@@ -1,0 +1,23 @@
+{
+  "name": "remora",
+  "version": "0.1.0",
+  "description": "Framework agnostic lib for stick-scrolling DOM elements",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jeka1985/remora.git"
+  },
+  "keywords": [
+    "dom",
+    "stick"
+  ],
+  "author": "Eugene Yemelin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jeka1985/remora/issues"
+  },
+  "homepage": "https://github.com/jeka1985/remora#readme"
+}
