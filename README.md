@@ -1,4 +1,4 @@
-# remora
+# Remora JS
 Framework agnostic lib for stick-scrolling DOM elements.
 
 Just wrap your block into following markup
