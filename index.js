@@ -75,7 +75,7 @@ export default class Remora {
       isTargetOverflow = targetRect.height > innerHeight;
 
     if (this.lastDirection && isTargetOverflow && direction !== this.lastDirection) {
-      this.release(Math.abs(containerRect.top - targetRect.top));
+      this.release(Math.abs(containerRect.top - targetRect.top), targetRect.height);
     } else {
       if (direction == 'down') {
         if (isTargetOverflow) {
@@ -83,7 +83,7 @@ export default class Remora {
             innerHeight - targetRect.height - this.gaps.bottom);
 
           containerRect.bottom <= targetRect.bottom && this.release(
-            Math.abs(containerRect.height - targetRect.height));
+            Math.abs(containerRect.height - targetRect.height), targetRect.height);
           
         } else {
           containerRect.top < this.gaps.top && this.stick(this.gaps.top);
@@ -91,7 +91,7 @@ export default class Remora {
       } else {
         targetRect.top >= this.gaps.top && this.stick(this.gaps.top);
 
-        containerRect.top >= this.gaps.top && this.release(0);
+        containerRect.top >= this.gaps.top && this.release(0, targetRect.height);
       }
     }
       
@@ -104,8 +104,9 @@ export default class Remora {
     this.target.style.top = `${top}px`;
   }
   
-  release(top) {
+  release(top, height) {
     this.target.style.position = 'absolute';
     this.target.style.top = `${top}px`;
+    this.target.style.height = `${height}px`;
   }
 }
