@@ -1,5 +1,5 @@
 {
-  "name": "remora",
+  "name": "remorajs",
   "version": "0.1.1",
   "description": "Framework agnostic lib for stick-scrolling DOM elements",
   "main": "index.js",
