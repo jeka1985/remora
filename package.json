@@ -1,6 +1,6 @@
 {
   "name": "remorajs",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Framework agnostic lib for stick-scrolling DOM elements",
   "main": "index.js",
   "scripts": {
